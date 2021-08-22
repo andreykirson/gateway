@@ -1,8 +1,8 @@
 spring:
-  cloud:
-   consul:
-    config:
-     data-key: application.yml
-     prefix: config
-     format: yaml
-     default-context: defaults
+ cloud:
+  consul:
+   config:
+    enabled: true
+    prefixes: config
+    defaultContext: default
+    profileSeparator: ','
